@@ -1,0 +1,32 @@
+/*nav {
+    font-family: "Alexandria", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: auto;
+    border-radius: 1.75px;
+
+  
+    
+    }*/
+
+
+nav {
+    text-align: center;
+}
+    nav {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+    
+nav:hover{
+    background: #0e67cd;
+    transition: .5s;
+}
