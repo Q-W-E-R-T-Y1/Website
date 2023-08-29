@@ -1,0 +1,289 @@
+.rubik-font {
+    font-family: "Alexandria", sans-serif;
+  } 
+
+.rcorners {
+    border-radius: 3px;
+    
+    background:  #75C2F6;
+    padding: 10px 15px;
+    /* width: 25px; */
+    height: 5px;
+    font-size: 19px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+li {
+    display: inline;
+    color: aliceblue;
+  }
+#mask{
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: translateY(-200%);
+  animation: slideDown 1.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation-delay: 2s;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  
+  
+}
+
+#mask.slide-down {
+  animation: slideDownAnimation 2s ease-in-out forwards;
+}
+
+@keyframes slideDownAnimation {
+  from {
+      transform: translateY(-200%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+
+
+
+@keyframes slideDown {
+  to {
+    transform: translateY(-100%);
+    /* opacity:1; */
+  }
+}
+
+@keyframes slideUp {
+  /* from{
+    transform: translateY(-100%);
+  } */
+  to {
+    transform: translateY(0%);
+  }
+}
+/* .skew{
+  transform: skew(-0.06turn, 18deg);
+} */
+#maskowner{
+  width: fit-content;
+  height:   114.4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#stackowner{
+  /* transform: skew(-0.06turn, 18deg); */
+  margin-left: auto;
+  margin-right: auto;
+  height: 574.99px;
+  width: 574.99px;
+}
+ #cat{
+  z-index: 0;
+}
+#dog{
+  z-index: 0;
+}
+#dinosaur{
+  z-index: 1;
+} 
+.dive{
+  /* background-color: coral; */
+
+  
+  /* border: 1px solid black; */
+  overflow: hidden;
+  
+}
+a{
+  color: #0e67cd;
+  /* font-family: "Alexandria", sans-serif; */
+  text-decoration: none;
+}
+#title{
+  background: radial-gradient(blue, turquoise);
+  /* background-position: 50% 5%; */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+ul{
+  text-align: center;
+ }
+main {
+    /* color: #0e67cd; */
+    background: white;
+    display:block;
+    margin: 0px;
+    /*background-color: #ff9238;*/
+    /* padding: px; */
+    text-align: center;
+}
+
+.nav_link.active{
+  /* background: #0e67cd; */
+  transition: .5s;
+}
+
+h1 {
+    background: #ffffff;
+    text-align: center;
+    font-size: 100px;
+    margin: 0px;
+    padding: 20px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+  
+  }
+
+ html, body {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    font-family: "Alexandria", sans-serif;
+    /* background: linear-gradient(#e66465, #e5d28f); */
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.nav_link :hover {
+    transition:.5s;
+    font-size:25px;
+}
+a :visited{
+  text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  .nav_link {
+    align-items: center;
+    justify-content: center;
+
+    color:aliceblue;
+    position: relative;
+    margin: 20px 10px;
+    width: 10rem;
+    height: 7.5rem;
+    /* background: radial-gradient(#F4D160, #FBEEAC); */
+    border-radius: 8px;
+    font-family: Alexandria, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* letter-spacing: 2px; */
+    transition: 1s box-shadow;
+  }
+  
+  .nav_link:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.3);
+  }
+  
+  /* Reset default margin and padding for images */
+#stackowner img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Positioning for the stacked images */
+#stackowner {
+  position: relative;
+  /* width: 100%; */
+  height: auto;
+  display: flex;
+  justify-content: center; 
+}
+
+#stackowner img {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  /* width: 100%; */
+  /* height: auto; */
+  width: 400px;
+  height: 400px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.5s ease-in-out; /* Add transition for smooth animation */
+  
+}
+
+
+#stackowner img:nth-child(1) {
+  transition: transform 1s ease-in-out, top 1s ease-in-out;
+  top: 0%;
+  transform-origin: center top;
+}
+
+/* Adjust positioning for the images */
+#stackowner img:nth-child(2) {
+  transition: transform 1s ease-in-out, top 1s ease-in-out;
+  top: 0%;
+  transform-origin: center top;
+}
+#stackowner img:nth-child(3) {
+  transition: transform 1s ease-in-out, top 1s ease-in-out;
+  top: 0%;
+  transform-origin: center top;
+}
+
+/* Applied styles for the clicked state */
+#stackowner.clicked img:nth-child(1) {
+  animation: shake 2s ease-in-out forwards, 2s one 1s ease-in-out forwards;
+  /* transform: translateX(-115%) skewY(10deg); */
+}
+
+#stackowner.clicked img:nth-child(2) {
+  animation: shake 2s ease-in-out forwards, 2s two 2s ease-in-out forwards;
+  /* transform: translateX(0) skewY(10deg); */
+}
+
+#stackowner.clicked img:nth-child(3) {
+  animation: shake 2s ease-in-out forwards, 2s three 1s ease-in-out forwards;
+  /* transform: translateX(115%) skewY(10deg); */
+}
+
+@keyframes shake {
+  0% {
+    transform: skewY(10deg);
+  }
+  50% {
+    transform: skew(45deg, -45deg);
+  }
+  75% {
+    transform: skew(-45deg, 45deg);
+  }
+  100% {
+    transform: skew(0deg, 10deg);
+  }
+}
+
+@keyframes one {
+  to {
+    transform: translateX(-115%) skewY(10deg);
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.3);
+  }
+}
+
+@keyframes two {
+  to {
+    transform: translateX(0) skewY(10deg);
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.3);
+  }
+}
+
+@keyframes three {
+  to {
+    transform: translateX(115%) skewY(10deg);
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.3);
+  }
+}
